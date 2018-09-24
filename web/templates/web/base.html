@@ -1,0 +1,24 @@
+{% extends "common/app/base.html" %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'common/node_modules/startbootstrap-sb-admin-2/vendor/metisMenu/metisMenu.min.css' %}" rel="stylesheet">
+    <link href="{% static 'common/node_modules/startbootstrap-sb-admin-2/vendor/morrisjs/morris.css' %}" rel="stylesheet">
+    <link href="{% static 'common/node_modules/startbootstrap-sb-admin-2/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block main %}
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+{% endblock %}
+{% block js %}
+    <script src="{% static 'common/node_modules/startbootstrap-sb-admin-2/vendor/metisMenu/metisMenu.min.js' %}"></script>
+    <script src="{% static 'common/node_modules/startbootstrap-sb-admin-2/vendor/raphael/raphael.min.js' %}"></script>
+    <script src="{% static 'common/node_modules/startbootstrap-sb-admin-2/vendor/morrisjs/morris.min.js' %}"></script>
+    <script src="{% static 'common/node_modules/startbootstrap-sb-admin-2/data/morris-data.js' %}"></script>
+    <script src="{% static 'common/node_modules/startbootstrap-sb-admin-2/dist/js/sb-admin-2.js' %}"></script>
+    <script src="{% static 'web/js/vue/components/institution-search.js' %}"></script>
+    <script src="{% static 'web/js/vue/components/institution-search-results.js' %}"></script>
+    <script src="{% static 'web/js/vue/app.js' %}"></script>
+{% endblock %}

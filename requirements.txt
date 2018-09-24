@@ -1,0 +1,10 @@
+django==2.0.8
+django-filter==2.0.0
+django-pyodbc-azure==2.0.6.1
+djangorestframework==3.8.2
+Markdown==2.6.11
+pyodbc==4.0.23
+graphene-django==2.1.0
+elasticsearch-dsl==6.2.1
+django-elasticsearch-dsl-drf==0.15
+wkhtmltopdf==0.2
